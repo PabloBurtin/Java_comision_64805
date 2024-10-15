@@ -25,7 +25,7 @@ function mantenimientoPreventivo () {
     } 
     console.log ("Se concurrió al local de "+ seleccionLocal + " y se realizó el mantenimiento preventivo. Se registraron los siguientes valores")
 
-    console.table({Evaporadores: evaporadores, Temperaturas: temperaturas})   
+    console.table({Evaporadores:evaporadores, Temperatura:temperaturas})   
 }
 
 function incidencia () {

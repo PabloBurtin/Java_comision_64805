@@ -16,12 +16,11 @@ let seleccionLocal;
 
 function mantenimientoPreventivo () {
     alert ("Reemplaza todo los filtros")
-    
-    while (true){
+    let registro = confirm ("Agrega evaporador")
+    while (registro !== false){
     agregarEvaporador()
     registrarTemperatura()
-    let agregarOtro = confirm ("¿Agregas otro evaporador?")
-    if (agregarOtro == false) {break;} 
+    registro = confirm ("Agrega evaporador") 
     } 
     console.log ("Se concurrió al local de "+ seleccionLocal + " y se realizó el mantenimiento preventivo. Se registraron los siguientes valores")
 
@@ -34,7 +33,7 @@ function incidencia () {
 }
 
 
-while (true) {
+while (seleccionLocal != true) {
     seleccionLocal = prompt("Ingresa el local donde estás").toLowerCase();
 
     if (locales.includes(seleccionLocal)) {

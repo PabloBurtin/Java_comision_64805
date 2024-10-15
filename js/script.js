@@ -47,7 +47,7 @@ while (true) {
 
 let tipoMantenimiento = prompt("Selecciona el tipo de mantenimiento: preventivo o incidencia").toLowerCase();
 
-while (tipoMantenimiento === "preventivo" || tipoMantenimiento === "incidencia"){
+while (tipoMantenimiento !== "preventivo" || tipoMantenimiento !== "incidencia"){
 switch (tipoMantenimiento){
     case "preventivo":
         mantenimientoPreventivo();

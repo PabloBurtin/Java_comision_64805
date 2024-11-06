@@ -1,4 +1,4 @@
-// const locales = ["abasto", "administracion", "alcorta", "avellaneda", "palermo", "dot", "florida", "bullrich", "santa fe", "tom", "unicenter"]
+
 
 // const evaporadores = []
 
@@ -73,21 +73,36 @@ const usuarios = [
 
 
 document.getElementById("ingresar").addEventListener("click", function(event) {
-    event.preventDefault(); // Previene la acción predeterminada del botón
+    event.preventDefault();
 
   
-    const usernameInput = document.getElementById("username").value;
-    const userlastnameInput = document.getElementById("userlastname").value;
+    const usernameInput = document.getElementById("username").value.toLowerCase();
+    const userlastnameInput = document.getElementById("userlastname").value.toLowerCase();
 
     
-    const usuario = usuarios.find(user => user.username === usernameInput && user.userlastname === userlastnameInput);
+    const usuario = usuarios.find(user => user.username.toLowerCase() === usernameInput && user.userlastname.toLowerCase() === userlastnameInput);
 
-    const resultado = document.createElement("p");
+   
     if (usuario) {
-        
+        localStorage.setItem("usuarioActivo",JSON.stringify(usuario));
         window.location.href = "./paginas/seleccion.html"; 
     } else {
        alert ("Usuario no registrado")
     }
 });
+
+document.getElementById("registrar").addEventListener("click", function(event) {
+    event.preventDefault(); 
+    window.location.href = "./paginas/newuser.html"; })
+
+const usuarioActivo =JSON.parse(localStorage.getItem("usuarioActivo"))
+
+
+
+function saludar (){
+    const saludoUser = document.createElement("h2")
+    saludoUser.textContent = `Hola, ${usuarioActivo} !!!`
+    const saludo = document.getElementById("saludo")
+    saludo.appendChild(saludoUser)
+}
 

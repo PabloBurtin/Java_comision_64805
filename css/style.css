@@ -7,6 +7,8 @@
 main {
   background-color: grey;
   background-size: cover;
+  height: 100%;
+  margin: 0px;
 }
 
 .container-index {
@@ -52,6 +54,44 @@ main {
   font-size: 1rem;
   padding: 15px;
   margin: 5px;
+}
+
+body {
+  background-color: grey;
+  height: 100%;
+}
+
+h2 {
+  padding: 25px;
+  margin: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+div {
+  padding: 25px;
+  margin: 25px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+select {
+  padding: 25px;
+  margin: 25px;
+  font-size: 2rem;
+}
+
+option {
+  padding: 25px;
+  margin: 25px;
+  font-size: 2rem;
+}
+
+#local {
+  padding: 25px;
+  margin: 25px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

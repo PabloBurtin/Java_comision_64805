@@ -1,4 +1,4 @@
-
+// const locales = ["abasto", "administracion", "alcorta", "avellaneda", "palermo", "dot", "florida", "bullrich", "santa fe", "tom", "unicenter"]
 
 // const evaporadores = []
 
@@ -73,7 +73,7 @@ const usuarios = [
 
 
 document.getElementById("ingresar").addEventListener("click", function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Previene la acción predeterminada del botón
 
   
     const usernameInput = document.getElementById("username").value.toLowerCase();

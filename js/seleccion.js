@@ -1,14 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-    }
-    const saludoUser = document.createElement("h2")
-    const nombreMayus = capitalizeFirstLetter (usuarioActivo.username)
-    saludoUser.textContent = `Hola, ${nombreMayus} !!!` 
-    const saludo = document.getElementById("saludo")
-    saludo.appendChild(saludoUser)
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     let tecnico = localStorage.getItem("usuario")
+//     tecnico = JSON.parse(tecnico)
+
+//     let saludoContainer = document.getElementById("saludo")
+
+//     function capitalizeFirstLetter(string) {
+//         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+//     }
+
+//     let saludoUser = document.createElement("h2")
+//     let nombreMayus = capitalizeFirstLetter (usuario.username)
+//     saludoUser.textContent = `Hola, ${nombreMayus} !!!` 
+//     const saludo = document.getElementById("saludo")
+//     saludo.appendChild(saludoUser)
 
     const locales = ["Abasto", "Administracion", "Alcorta", "Avellaneda", "Palermo", "Dot", "Florida", "Bullrich", "Santa Fe", "TOM", "Unicenter"]
 
@@ -165,6 +170,5 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
 
-});
 
 

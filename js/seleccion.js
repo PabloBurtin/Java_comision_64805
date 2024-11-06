@@ -72,7 +72,7 @@
 
                 const finalizarUrgencia = document.createElement("button");
                         finalizarUrgencia.textContent = "Finalizar";
-                        inputContainer.appendChild(finalizarButtonUrgencia);
+                        inputContainer.appendChild(finalizarUrgencia);
 
                 finalizarUrgencia.addEventListener("click", function() {
                     const urgenciaData = {

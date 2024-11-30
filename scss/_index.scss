@@ -1,51 +1,49 @@
-.container-index{
-    display: grid;
-    margin: 200px 10px 200px 10xp;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    grid-template-rows: auto;
-    grid-auto-flow: row;
-    grid-template-areas: 
-    "logoPrincipal"
-    "ingreso";
 
-.logoPrincipal{
-    img{
-    grid-area: logoPrincipal;
-    width: 300px;
-    background-color: transparent;}
+#contenedor-ingreso{    
+   
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    padding: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; 
+    overflow: hidden; 
 
-#ingreso{
-    grid-area: ingreso;
+    
+    #ingreso{
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 0px;
+    margin-top: 0px;
     margin-bottom: 10px;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    label {
+        font-size: 2rem;
+        padding: 10px;
+        margin-top: 50px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+    }
     
     input{
         font-size: 2rem;
         padding: 15px;
-        margin: 5px;
+        margin-top: 50px;
+        font-family: "Open Sans", sans-serif;
+        
+      
     }
     
     button{
-        width: 6rem;
         font-size: 1rem;
         padding: 15px;
-        margin: 5px;
+        margin-top: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
     }
 
-}
+}}
 
-}

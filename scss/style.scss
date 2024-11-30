@@ -1,11 +1,12 @@
 @import "reset";
 @import "main";
-@import "index.scss";
-
-body{
-    background-color: grey;
-    height: 100%;
-}
+@import "index";
+@import "header";
+@import "var";
+@import "footer";
+@import "body";
+@import "newuser";
+@import "mixin";
 
 h2 {
     padding: 25px;
@@ -13,10 +14,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-div{
-    padding: 25px;
-    margin: 25px;
-}
+
 
 p{
  font-size: 1rem;

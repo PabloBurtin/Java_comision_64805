@@ -1,0 +1,66 @@
+@mixin subtitulos{
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2.9rem;
+}
+
+@mixin texto {
+    color: $color-claro;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.2rem;
+    
+}
+
+@mixin fondo{
+    background: $bg-fondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin subtitulo2{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 2.3rem;
+
+}
+
+@mixin subtitulo3{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 1.9rem;
+
+}
+
+@mixin subtitulo4{ color: $color-claro;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: $color-claro;
+    font-size: 1.6rem;
+
+}
+
+@mixin icono{ width: 75px;
+    padding: 5px;
+    background-color: $bg-claro;
+
+}
+
+@mixin img-mtto{
+    width: auto;
+    height: 250px;
+}

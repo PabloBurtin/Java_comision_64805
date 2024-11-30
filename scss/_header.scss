@@ -1,0 +1,39 @@
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: white;
+    width: 100%;
+
+    .logo{
+        background-color: transparent;
+        img{
+            width: 400px;
+            margin: 10px;
+
+        }
+    }
+    .titulo{
+        font-family: "Anton SC", sans-serif;
+        font-weight: 150;
+        font-style: normal;
+    }
+    .nav-link-pablo{
+        text-decoration: none;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        color: black;
+        font-weight: bold;
+        align-content: last baseline;
+        justify-content: space-between;
+        margin: 10px 10px;
+    
+    }
+    .nav-link-pablo:hover{
+        color: blue;
+        border-bottom: 2px solid;
+      }
+}

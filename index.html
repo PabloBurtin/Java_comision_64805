@@ -3,41 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Fuentes importadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <!-- JS -->
     <script defer src="./js/index.js"></script>
+    
+    <!--Estilo-->
     <link rel="stylesheet" href="css/style.css">
-    <title>Programa de Pablo Burtin</title>
+    
+    <!--Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Mantenimiento locales Zara</title>
 </head>
-<body>
-    <h1>Entrega nro 2 - Pablo Burtin</h1>
 
-<main class="container-index">
-    <div class = "logoPrincipal">
-        <img src="Img/logo/stepservicios.jpg" alt="">
-    </div>
-    <section id = "ingreso">
-        <div class="nombreusuario">
-            <input type="text" id="username" placeholder="Nombre">
+<body>
+    <!--
+    Este es un programa que ayuda a los técnicos a registrar el mantenimiento en los locales. Está pensado principalmente para los equipos de aire acondicionados de los locales.
+    Tengo que ir agregando variables y también alertas para poder orientarlos a realizar el mantenimiento de forma ordenada y controlen todos los valores de funcionamiento.
+    Tambíen, la idea es que cuando inserten un valor que está fuera de lo normal, los ayude a poder hacer un diagnostico correcto.
+    -->
+
+    <header>
+        <div class="logo">
+          <img src="./Img/logo/stepservicios.jpg" alt="Logo">
         </div>
-        <div class="apellidousuario">
-            <input type="text" id="userlastname" placeholder="Apellido">
+        <div class="titulo">
+          <h1>APP de Mantenimiento</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-pablo">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link-pablo" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link-pablo" href="./paginas/locales.html">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link-pablo" href="./paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<main id="contenedor-ingreso">
+    <section id = "ingreso">
+        <div class="Username">
+          <label for="">Usuario</label>
+            <input type="text" id="user" >
+        </div>
+        <div class="contrasena">
+          <label for="">Contraseña</label>
+            <input type="password" id="password">
         </div>        
         
         <div class="botones">
             <button id = "registrar">Registro</button>
             <button id= "ingresar">Ingresar</button>
         </div>
-        
-
     </section>
-    
-    
 </main>
 
-    <!--
-    Este es un programa que ayuda a los técnicos a registrar el mantenimiento en los locales. Está pensado principalmente para los equipos de aire acondicionados de los locales.
-    Tengo que ir agregando variables y también alertas para poder orientarlos a realizar el mantenimiento de forma ordenada y controlen todos los valores de funcionamiento.
-    Tambíen, la idea es que cuando inserten un valor que está fuera de lo normal, los ayude a poder hacer un diagnostico correcto.
-    -->
+
+<footer class="footer-pablo">
+        <div>
+            <ul class="lista-footer-pablo">
+                <li class="link-mail">📪 info@stepservicios.com</li>
+                <li>☎️ +54 11 4853-2271</li>
+            </ul>
+        </div>
+    
+</footer>
+
+<!--Link del script de bootstrap-->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

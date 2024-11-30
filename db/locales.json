@@ -1,0 +1,100 @@
+[
+    {
+        "Local": "Abasto",
+        "Dirección": "Av. Corrientes 3247, CABA",
+        "Tipo de equipo": "Enfriador de agua" ,
+        "Telefono": "0800-266-7512",
+        "Encargado": "Lucia",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1429.4515375453864!2d-58.41208934781614!3d-34.60372918633993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8c854bd13f%3A0xcc710b7d1244a9ad!2sZARA!5e0!3m2!1ses!2sar!4v1732928292437!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Administración" ,
+        "Dirección": "Av. Constituyentes 1608, B1667 Tortuguitas, Provincia de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargad0": "José",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254.8931810736523!2d-58.74286967261205!3d-34.45927018086732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9999dd94819b%3A0xf661c6ced7ca56b7!2sCentro%20de%20distribuci%C3%B3n!5e0!3m2!1ses!2sar!4v1732928734822!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Alcorta",
+        "Dirección": "Jerónimo Salguero 3172, C1425 Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "Agua del Shopping",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Belen",
+        "iframe":  "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1592801567153!2d-58.406604923389295!3d-34.5748360729647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5656c07287d%3A0x39af8eec4a3602ef!2sZara%20%E2%80%A2%20Alcorta%20Shopping!5e0!3m2!1ses!2sar!4v1732929011287!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Avellaneda",
+        "Dirección": "Gral. Güemes 897, B1873BOC Avellaneda, Provincia de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Ludmila",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0939713647685!2d-58.37293381006227!3d-34.6775777031248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33336bdf02a69%3A0x584d0cb70bfcd278!2sZARA!5e0!3m2!1ses!2sar!4v1732929138943!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Palermo",
+        "Dirección": "Av. Sta. Fe 3253, C1091 Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Fernanda",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6231138642843!2d-58.413312223389006!3d-34.588401772959884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses!2sar!4v1732929198893!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "DOT",
+        "Dirección": "Shopping Dot, Vedia 3626, C1005 Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "Agua del Shopping",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Camila",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2771835535736!2d-58.49067982339033!3d-34.54653667297492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c0f7e931b7%3A0xe0d8e19814ed2808!2sZARA!5e0!3m2!1ses!2sar!4v1732929337025!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Florida",
+        "Dirección": "Florida 651, C1005 Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargado": "Juan",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1552640677405!2d-58.37795192338867!3d-34.600235172955436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb88ec1205%3A0x6a434925e4c6be77!2sZARA!5e0!3m2!1ses!2sar!4v1732929455144!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Bullrich",
+        "Dirección": "Posadas 1245, C1011ABE Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "Agua del Shopping",
+        "Telefono": "0800-266-7512",
+        "Encargado": "Pablo",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6052776188403!2d-58.386555223389!3d-34.588852972959806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabab9712d57%3A0xa9df2f1bd8db63f2!2sPatio%20Bullrich!5e0!3m2!1ses!2sar!4v1732929556046!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "Santa Fe",
+        "Dirección": "Av. Sta. Fe 1937, C1123 Cdad. Autónoma de Buenos Aires",
+        "Tipo de equipo": "VRV Hisense",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Marilina",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3389351623955!2d-58.3977642233889!3d-34.59558997295714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9610e434db%3A0x82805d50f7451061!2sZARA!5e0!3m2!1ses!2sar!4v1732929631778!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    },
+
+    {
+        "Local": "TOM",
+        "Dirección": "Tortugas Open Mall, Ramal Pilar, B1667 Tortuguitas, Provincia de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargado": "Cristian",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.010294071496!2d-58.72991182339341!3d-34.45188657300906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc98a6268821eb%3A0x7050ec2c6c8ea065!2sZARA!5e0!3m2!1ses!2sar!4v1732929744356!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>" 
+    },
+
+    {
+        "Local": "Unicenter" ,
+        "Dirección": "Paraná 3745 B1640FRC, B1640FRC Martínez, Provincia de Buenos Aires",
+        "Tipo de equipo": "Enfriador de agua",
+        "Telefono": "0800-266-7512",
+        "Encargada": "Daniela",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7743934598116!2d-58.52804031010006!3d-34.50860340334147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter%20Shopping!5e0!3m2!1ses!2sar!4v1732929846310!5m2!1ses!2sar\" width=\"350\" height=\"200\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+    }
+]

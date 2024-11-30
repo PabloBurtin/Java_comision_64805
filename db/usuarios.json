@@ -1,0 +1,57 @@
+[
+    { "id": 1, 
+    "username": "carlos.galli",
+    "nombre": "Carlos", 
+    "apellido": "Galli",
+    "password": "c@rlosg@ll1",
+    "telefono": 11245503097
+    },
+
+    { "id": 2, 
+    "username": "carlos.faccini",
+    "nombre": "Carlos", 
+    "apellido": "Faccini",
+    "password": "elt@no",
+    "telefono": 11245503098
+    },
+
+    { "id": 3, 
+    "username": "roberto.herrera",
+    "nombre": "Roberto", 
+    "apellido": "Herrera",
+    "password": "r0bert0",
+    "telefono": 11245503099
+    },
+
+    { "id": 4, 
+    "username": "cristian.rivero",
+    "nombre": "Cristian", 
+    "apellido": "Rivero",
+    "password": "cristi@n",
+    "telefono": 11245503100
+    },
+
+    { "id": 5, 
+    "username": "richard.gauto",
+    "nombre": "Richard", 
+    "apellido": "Gauto",
+    "password": "rich@rd",
+    "telefono": 11245503101
+    },
+
+    { "id": 6, 
+    "username": "pablo.burtin",
+    "nombre": "Pablo", 
+    "apellido": "Burtin",
+    "password": "p@blost3p",
+    "telefono": 1124639059
+    },
+
+    { "id": 7, 
+    "username": "ariel.rivero",
+    "nombre": "Ariel", 
+    "apellido": "Rivero",
+    "password": "m@urito",
+    "telefono": 1124553102
+    }
+]

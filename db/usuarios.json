@@ -53,5 +53,13 @@
     "apellido": "Rivero",
     "password": "m@urito",
     "telefono": 1124553102
+    },
+
+    { "id": 8, 
+    "username": "prueba",
+    "nombre": "Usuario", 
+    "apellido": "Prueba",
+    "password": "1234",
+    "telefono": 1124553102
     }
 ]

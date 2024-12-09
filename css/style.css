@@ -153,32 +153,284 @@ body {
   text-align: center;
 }
 
-h2 {
-  padding: 25px;
-  margin: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.remito-container {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo X numero-visita" "cliente cliente cliente" "detalle detalle detalle" "tecnico . encargado";
+  background-color: white;
+}
+.remito-container > div {
+  border: 1px solid black;
+}
+.remito-container .logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "img-logo img-logo img-logo" "datos-empresa datos-empresa datos-empresa" "datos-empresa datos-empresa datos-empresa";
+  grid-area: logo;
+}
+.remito-container .img-logo {
+  grid-area: img-logo;
+}
+.remito-container .img-logo img {
+  width: 500px;
+  padding: 10px;
+}
+.remito-container .datos-empresa {
+  grid-area: datos-empresa;
+}
+.remito-container .datos-empresa ul li {
+  list-style: none;
+}
+.remito-container .numero-visita {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "numero numero numero" "fecha fecha fecha" "datosfiscales datosfiscales datosfiscales";
+  grid-area: numero-visita;
+}
+.remito-container .numero {
+  grid-area: numero;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .fecha {
+  grid-area: fecha;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .datosfiscales {
+  grid-area: datosfiscales;
+}
+.remito-container .X {
+  grid-area: X;
+  display: flex;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.remito-container .cliente {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "empresa empresa empresa" "domicilio domicilio domicilio" "IVA . CUIT";
+  grid-area: cliente;
+}
+.remito-container .empresa {
+  grid-area: empresa;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .domicilio {
+  grid-area: domicilio;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .IVA {
+  grid-area: IVA;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .CUIT {
+  grid-area: CUIT;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .detalle {
+  grid-area: detalle;
+}
+.remito-container .tecnico {
+  grid-area: tecnico;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container .encargado {
+  grid-area: encargado;
+  padding: 15px;
+  margin: 15px;
+}
+.remito-container #itemsTable th, .remito-container #itemsTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
 
-p {
-  font-size: 1rem;
+#listado-de-locales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#listado-de-locales div {
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
 }
 
-select {
-  padding: 25px;
-  margin: 25px;
-  font-size: 2rem;
+.container-contactos {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 5px;
+  grid-template-rows: auto;
+  grid-template-areas: "nombre-contacto subtitulo" "mail-contacto mapa-contacto" "telefono-contacto mapa-contacto" "mensaje-contacto mapa-contacto" "boton mapa-contacto";
+}
+.container-contactos .nombre-contacto {
+  grid-area: nombre-contacto;
+  padding: 10px;
+  margin: 20px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+}
+.container-contactos .mail-contacto {
+  grid-area: mail-contacto;
+  padding: 10px;
+  margin: 20px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+}
+.container-contactos .telefono-contacto {
+  grid-area: telefono-contacto;
+  padding: 10px;
+  margin: 20px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+}
+.container-contactos .mensaje-contacto {
+  grid-area: mensaje-contacto;
+  padding: 10px;
+  margin: 20px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+}
+.container-contactos .boton {
+  grid-area: boton;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.container-contactos .subtitulo {
+  grid-area: subtitulo;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 2.9rem;
+  margin: 50px;
+}
+.container-contactos .mapa-contacto {
+  grid-area: mapa-contacto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.container-contactos .mapa-contacto iframe {
+  margin-bottom: 50px;
 }
 
-option {
-  padding: 25px;
-  margin: 25px;
-  font-size: 2rem;
+@media (max-width: 768px) {
+  .container-contactos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nombre-contacto" "mail-contacto" "telefono-contacto" "mensaje-contacto" "boton" "subtitulo" "mapa-contacto";
+  }
+  .nombre-contacto {
+    grid-area: nombre-contacto;
+  }
+  .mail-contacto {
+    grid-area: mail-contacto;
+  }
+  .telefono-contacto {
+    grid-area: telefono-contacto;
+  }
+  .mensaje-contacto {
+    grid-area: mensaje-contacto;
+  }
+  .boton {
+    grid-area: boton;
+  }
+  .subtitulo {
+    grid-area: subtitulo;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .mapa-contacto {
+    grid-area: mapa-contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+  }
 }
-
-#local {
-  padding: 25px;
-  margin: 25px;
-  font-size: 1.5rem;
+.container-seleccion {
+  height: 100vh;
+}
+.container-seleccion #saludo {
+  padding: 20px;
+  margin: 20px;
+}
+.container-seleccion #local {
+  padding: 20px;
+  margin: 20px;
+}
+.container-seleccion #local select {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.container-seleccion #local input {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.container-seleccion #local div {
+  padding-top: 10px;
+}
+.container-seleccion #local div button {
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

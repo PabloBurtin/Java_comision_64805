@@ -1,0 +1,19 @@
+@import "mixin";
+
+#listado-de-locales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 100%;
+    
+    padding: 15px;
+    box-sizing: border-box;
+
+    div{
+        flex: 0 1 calc(33.33% - 20px); // Cada hijo ocupará un tercio del contenedor, menos el margen
+        margin: 10px; // Margen alrededor de cada columna
+        box-sizing: border-box;
+    }
+
+}

@@ -41,17 +41,3 @@ document.getElementById("registrar").addEventListener("click", function(event) {
     event.preventDefault(); 
     window.location.href = "./paginas/newuser.html"; })
 
-
-
-
-
-    // const usuarioActivo =JSON.parse(localStorage.getItem("usuarioActivo"))
-
-
-
-// function saludar (){
-//     const saludoUser = document.createElement("h2")
-//     saludoUser.textContent = `Hola, ${usuarioActivo} !!!`
-//     const saludo = document.getElementById("saludo")
-//     saludo.appendChild(saludoUser)
-// }

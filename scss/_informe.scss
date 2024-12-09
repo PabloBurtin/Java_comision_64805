@@ -1,0 +1,163 @@
+.remito-container {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo X numero-visita"
+      "cliente cliente cliente"
+      "detalle detalle detalle"
+      "tecnico . encargado";
+    background-color: white; // Fondo blanco
+  
+    // Líneas de cada grid
+    & > div {
+      border: 1px solid black; // Puedes ajustar el color y el grosor aquí
+    }
+    .logo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "img-logo img-logo img-logo"
+        "datos-empresa datos-empresa datos-empresa"
+        "datos-empresa datos-empresa datos-empresa";
+      grid-area: logo;
+    }
+    
+    .img-logo {
+      grid-area: img-logo;
+    
+      img {
+        width: 500px;
+        padding: 10px;
+      }
+    }
+    
+    .datos-empresa {
+      grid-area: datos-empresa;
+      ul{
+        li{
+          list-style: none;
+        }
+      }
+    }
+    
+    .numero-visita {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "numero numero numero"
+        "fecha fecha fecha"
+        "datosfiscales datosfiscales datosfiscales";
+      grid-area: numero-visita;
+    }
+    
+    .numero {
+      grid-area: numero;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .fecha {
+      grid-area: fecha;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .datosfiscales {
+      grid-area: datosfiscales;
+    }
+    
+    .X {
+      grid-area: X;
+      display: flex;
+      font-size: 5rem;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .cliente {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "empresa empresa empresa"
+        "domicilio domicilio domicilio"
+        "IVA . CUIT";
+      grid-area: cliente;
+    }
+    
+    .empresa {
+      grid-area: empresa;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .domicilio {
+      grid-area: domicilio;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .IVA {
+      grid-area: IVA;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .CUIT {
+      grid-area: CUIT;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .detalle {
+      grid-area: detalle;
+      
+    }
+    
+    .tecnico {
+      grid-area: tecnico;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .encargado {
+      grid-area: encargado;
+      padding: 15px;
+      margin: 15px;
+    }
+    
+  
+    #itemsTable {
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    }
+  }
+  
+  
+  
+  // Estilizado adicional
+//   label {
+//     display: block;
+//     margin-bottom: 5px;
+//   }
+  
+//   input[type="text"], textarea {
+//     width: 100%;
+//     padding: 8px;
+//     box-sizing: border-box;
+//     border: 1px solid #ccc;
+//   }

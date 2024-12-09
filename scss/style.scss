@@ -7,34 +7,8 @@
 @import "body";
 @import "newuser";
 @import "mixin";
-
-h2 {
-    padding: 25px;
-    margin: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-
-p{
- font-size: 1rem;
-}
-
-select{
-    padding: 25px;
-    margin: 25px;
-    font-size: 2rem;
-}
-
-option {
-    padding: 25px;
-    margin: 25px;
-    font-size: 2rem;
-}
-
-#local{
-    padding: 25px;
-    margin: 25px;
-    font-size: 1.5rem;
-}
+@import "informe";
+@import "locales";
+@import "contactos";
+@import "seleccion";
 

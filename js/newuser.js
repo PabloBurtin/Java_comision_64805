@@ -32,7 +32,11 @@ const password2 = document.getElementById ('password2').value
 const telefono = document.getElementById ('telefono').value
 
 if (password !== password2){
-    alert ("Las contraseñas no coinciden.")
+    // alert ("Las contraseñas no coinciden.")
+    Swal.fire({
+        icon: "error",
+        text: "Las constraseñas no coinciden.",
+      });
     return
 }
 
@@ -54,9 +58,26 @@ const nuevoId = usuarios.length > 0 ? Math.max(...usuarios.map(user => user.id))
     
     localStorage.setItem ("usuarios", JSON.stringify(usuarios))
     
-    this.reset ();
+  
     
-    alert ("Usuario agregado exitosamente")
+    Swal.fire({
+        title: "¿Quieres registrarte?",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Si",
+        denyButtonText: `No`
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          Swal.fire("Guardado", "", "success").then(()=>{
+            window.location.href = "../index.html"
+          })
+        } else if (result.isDenied) {
+          Swal.fire("No te registraste", "", "info").then(()=>{
+            this.reset()
+          });
+        }
+      });
 
     })
     let usuarioscargados = localStorage.getItem("usuarios")

@@ -25,7 +25,12 @@ document.getElementById("ingresar").addEventListener("click", function(event) {
                 sessionStorage.setItem("usuarioActivo", JSON.stringify(usuario));
                 window.location.href = "./paginas/seleccion.html";
             } else {
-                alert("Usuario no registrado");
+                
+                Swal.fire({
+                    icon: "error",
+                    title: "Usuario no registrado",
+                    text: "Ingrese usuario y contraseña correcta",
+                  });
             }
         })
         .catch(error => {

@@ -104,12 +104,27 @@ document.addEventListener("DOMContentLoaded", function() {
                         };
         
                         sessionStorage.setItem("registroUrgencia", JSON.stringify(urgenciaData))
-                        alert("Información de urgencia guardada.")
+                        Swal.fire({
+                            title: "¿Se resolvió el problema?",
+                            showDenyButton: true,
+                            confirmButtonText: "Si",
+                            denyButtonText: `No`
+                          }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                Swal.fire("Guardado", "", "success").then(()=>{
+                                 window.location.href = 'informe.html'
+                                })
+                            } else if (result.isDenied) {
+                              Swal.fire("Puedes agregando información", "", "info");
+                            }
+                          })
+
                         input1.value = ""
                         input2.value = ""
                         input3.value = ""
 
-                        window.location.href = 'informe.html'
+                        
                     })
         
                         break
@@ -308,9 +323,23 @@ document.addEventListener("DOMContentLoaded", function() {
                                 };
                             sessionStorage.setItem("registroPreventivo", JSON.stringify(preventivoData))
                                 
-                            alert("Información de preventivo guardada.")
+                            Swal.fire({
+                                title: "Finalizaste el servicio.",
+                                showDenyButton: true,
+                                confirmButtonText: "Si",
+                                denyButtonText: `No`
+                              }).then((result) => {
+                                /* Read more about isConfirmed, isDenied below */
+                                if (result.isConfirmed) {
+                                    Swal.fire("Guardado", "", "success").then(()=>{
+                                     window.location.href = 'informe.html'
+                                    })
+                                } else if (result.isDenied) {
+                                  Swal.fire("Puedes agregando información", "", "info");
+                                }
+                              });
                             
-                            window.location.href = 'informe.html'
+                            
                             })
                             break
                        }

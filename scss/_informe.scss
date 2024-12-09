@@ -116,12 +116,17 @@
     
     .CUIT {
       grid-area: CUIT;
-      padding: 15px;
+      padding-left: 15px;
       margin: 15px;
     }
     
     .detalle {
       grid-area: detalle;
+      
+      p{
+        padding-left: 15px;
+        margin-left: 15px;
+      }
       
     }
     

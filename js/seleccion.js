@@ -231,12 +231,30 @@ document.addEventListener("DOMContentLoaded", function() {
                                                             correasReemplazadas.push({ sector, modelo })
 
                                                             sessionStorage.setItem("correas", JSON.stringify(correasReemplazadas))
+                                                            
+                                                            Toastify({
+                                                                text: "Registrado",
+                                                                duration: 2000,
+                                                                destination: "#",
+                                                                newWindow: true,
+                                                                close: true, 
+                                                                gravity: "top",
+                                                                position: "right",
+                                                                stopOnFocus: true,
+                                                                style: {
+                                                                  background: "green",
+                                                                },
+                                                                onClick: function(){} // Callback after click
+                                                              }).showToast();
 
                                                             sectorInput.value = ""
                                                             modelInput.value = ""
                         
                                                         } else {
-                                                            alert("Por favor, complete ambos campos.")
+                                                            Swal.fire({
+                                                                icon: "error",
+                                                                text: "Complete sector y modelo.",
+                                                              });
                                                         }
                                                         
                                                 })
@@ -303,8 +321,26 @@ document.addEventListener("DOMContentLoaded", function() {
                                     inputSector.value = ""
                                     inputTemperatura.value = ""
 
+                                    Toastify({
+                                        text: "Temperatura agregada",
+                                        duration: 1500,
+                                        destination: "#",
+                                        newWindow: true,
+                                        close: true, 
+                                        gravity: "top",
+                                        position: "right",
+                                        stopOnFocus: true,
+                                        style: {
+                                          background: "blue",
+                                        },
+                                        onClick: function(){} // Callback after click
+                                      }).showToast();
+
                                 } else {
-                                    alert("Por favor, complete ambos campos.")
+                                    Swal.fire({
+                                        icon: "error",
+                                        text: "Complete sector y temperatura.",
+                                      });
                                 }
                                 
                         })
